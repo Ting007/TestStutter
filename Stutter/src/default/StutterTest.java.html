@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>StutterTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">StutterTest (Sep 12, 2018 5:03:41 PM)</a> &gt; <a href="../../index.html" class="el_group">Stutter</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">StutterTest.java</span></div><h1>StutterTest.java</h1><pre class="source lang-java linenums">import static org.junit.Assert.*;
+
+import java.io.*;
+
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+<span class="fc" id="L10">public class StutterTest {</span>
+
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+<span class="fc" id="L14">	}</span>
+	
+	@Test
+	public void testIsDelimit1() {
+<span class="fc" id="L18">		boolean result = Stutter.isDelimit('0');</span>
+<span class="fc" id="L19">		Assert.assertFalse(result);</span>
+//		fail(&quot;Not yet implemented&quot;);
+<span class="fc" id="L21">	}</span>
+	
+	@Test
+	public void testIsDelimit2() {
+<span class="fc" id="L25">		boolean result = Stutter.isDelimit(' ');</span>
+<span class="fc" id="L26">		Assert.assertTrue(result);</span>
+<span class="fc" id="L27">	}</span>
+	
+	@Test
+	public void testIsDelimit3() {
+<span class="fc" id="L31">		boolean result = Stutter.isDelimit('a');</span>
+<span class="fc" id="L32">		Assert.assertFalse(result);</span>
+<span class="fc" id="L33">	}</span>
+	@Test
+	public void testMain1() throws IOException{
+<span class="fc" id="L36">		String[] arg = {&quot;inputFile.txt&quot;};</span>
+<span class="fc" id="L37">		final InputStream original = System.in;</span>
+<span class="fc" id="L38">		final FileInputStream fips = new FileInputStream(new File (&quot;inputFile.txt&quot;));</span>
+<span class="fc" id="L39">		System.setIn(fips);</span>
+<span class="fc" id="L40">		Stutter.main(arg);</span>
+<span class="fc" id="L41">		System.setIn(original);</span>
+<span class="fc" id="L42">	}</span>
+	
+	@Test
+	public void testMain2() throws IOException{
+<span class="fc" id="L46">		String[] arg = {};</span>
+<span class="fc" id="L47">		final InputStream original = System.in;</span>
+<span class="fc" id="L48">		final FileInputStream fips = new FileInputStream(new File (&quot;inputFile.txt&quot;));</span>
+<span class="fc" id="L49">		System.setIn(fips);</span>
+<span class="fc" id="L50">		Stutter.main(arg);</span>
+<span class="fc" id="L51">		System.setIn(original);</span>
+<span class="fc" id="L52">	}</span>
+	
+	@Test
+	public void testMain3(){
+		try {
+<span class="fc" id="L57">		System.out.println(&quot;main&quot;);</span>
+<span class="fc" id="L58">		String[] arg = {null};</span>
+<span class="fc" id="L59">		final InputStream original = System.in;</span>
+<span class="fc" id="L60">		final FileInputStream fips = new FileInputStream(new File (&quot;inputFile.txt&quot;));</span>
+<span class="fc" id="L61">		System.setIn(fips);</span>
+<span class="fc" id="L62">		Stutter.main(arg);</span>
+<span class="fc" id="L63">		System.setIn(original);</span>
+<span class="pc" id="L64">		} catch(IOException e){</span>
+		}
+<span class="fc" id="L66">	}</span>
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+<span class="fc" id="L69">	}</span>
+
+	
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span>StutterTest (Sep 12, 2018 5:03:41 PM)</div></body></html>
