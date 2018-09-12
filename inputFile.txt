@@ -1,0 +1,3 @@
+Returns the set of absolute file system paths whose modification caused the current build.  
+A list of the characters, 'a' (added), 'c' (changed), 'r' (removed), 'f' (files only), 'd' (directories only), can be supplied as an argument to limit the file list to just those types of deltas.
+Defaults to all deltas. 
