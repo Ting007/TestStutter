@@ -4,4 +4,4 @@
 down load the depository into a eclipse workspace </br>
 configure the run setting, add arguments "inputfile.txt" </br>
 run as Junit test. </br>
-![Alt text](coverageReport.png?raw=true "coverageReport")
+![Alt text](JacocoReport.png?raw=true "coverageReport")

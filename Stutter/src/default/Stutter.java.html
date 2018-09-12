@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>Stutter.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">StutterTest (Sep 12, 2018 5:03:41 PM)</a> &gt; <a href="../../index.html" class="el_group">Stutter</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Stutter.java</span></div><h1>Stutter.java</h1><pre class="source lang-java linenums">// Introduction to Software Testing
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>Stutter.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">StutterTest (Sep 12, 2018 5:32:50 PM)</a> &gt; <a href="../../index.html" class="el_group">Stutter</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Stutter.java</span></div><h1>Stutter.java</h1><pre class="source lang-java linenums">// Introduction to Software Testing
 // Authors: Paul Ammann &amp; Jeff Offutt
 // Chapter 2, section 2.5, page 80
 
@@ -98,11 +98,11 @@ public static void checkDupes (int line)
 <span class="fc" id="L98">   return; // already checked, keep skipping</span>
    
 <span class="fc" id="L100">   lastdelimit = true;</span>
-<span class="pc bpc" id="L101" title="1 of 2 branches missed.">   if (curWord.equals(prevWord))</span>
+<span class="fc bfc" id="L101" title="All 2 branches covered.">   if (curWord.equals(prevWord))</span>
    {
-<span class="nc" id="L103">      System.out.println (&quot;Repeated word on line &quot; + line + &quot;: &quot; +</span>
-<span class="nc" id="L104">                        prevWord+ &quot; &quot; + curWord);</span>
-<span class="nc" id="L105">   }</span>
+<span class="fc" id="L103">      System.out.println (&quot;Repeated word on line &quot; + line + &quot;: &quot; +</span>
+<span class="fc" id="L104">                        prevWord+ &quot; &quot; + curWord);</span>
+<span class="fc" id="L105">   }</span>
    else
    {
 <span class="fc" id="L108">      prevWord = curWord;</span>
@@ -122,4 +122,4 @@ public static boolean isDelimit (char C)
 }
 
 } // end class Stutter
-</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span>StutterTest (Sep 12, 2018 5:03:41 PM)</div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span>StutterTest (Sep 12, 2018 5:32:50 PM)</div></body></html>
